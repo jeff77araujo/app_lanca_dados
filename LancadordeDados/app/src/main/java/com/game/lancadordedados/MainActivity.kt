@@ -12,11 +12,10 @@ class MainActivity : AppCompatActivity() {
 
         // apertar o botão, para lançar o dado 1 e 2
         findViewById<Button>(R.id.jogar).setOnClickListener {
-            findViewById<TextView>(R.id.dado1).text = lancarDados().toString()
-            findViewById<TextView>(R.id.dado2).text = lancarDados().toString()
+            
         }
     }
-    fun lancarDados(): Int {
+    fun lancarDado(): Int {
         return (1..6).random()
     }
 }

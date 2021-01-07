@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2196F3"
+    android:background="#2B2B2B"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/jogar"
         android:layout_width="175dp"
-        android:layout_height="100dp"
+        android:layout_height="90dp"
         android:backgroundTint="#152788"
         android:fontFamily="@font/bangers"
         android:insetTop="5dp"
@@ -21,39 +21,30 @@
         app:iconTint="#BA3131"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.651" />
+        app:layout_constraintVertical_bias="0.751" />
 
-    <TextView
-        android:id="@+id/dado1"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:fontFamily="@font/bangers"
-        android:text="@string/dado_1"
-        android:textAlignment="center"
-        android:textColor="#AAEC86"
-        android:textSize="50sp"
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toTopOf="@+id/jogar"
-        app:layout_constraintEnd_toStartOf="@+id/dado2"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dado1" />
 
-    <TextView
-        android:id="@+id/dado2"
-        android:layout_width="175dp"
-        android:layout_height="100dp"
-        android:fontFamily="@font/bangers"
-        android:text="@string/dado_2"
-        android:textAlignment="center"
-        android:textColor="#EF4848"
-        android:textSize="50sp"
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         app:layout_constraintBottom_toTopOf="@+id/jogar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.933"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501" />
+        app:srcCompat="@drawable/dado1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
