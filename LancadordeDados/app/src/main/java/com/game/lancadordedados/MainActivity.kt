@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
             
         }
     }
-    fun lancarDado(): Int {
+    fun lancarDados(): Int {
         return (1..6).random()
     }
 }
