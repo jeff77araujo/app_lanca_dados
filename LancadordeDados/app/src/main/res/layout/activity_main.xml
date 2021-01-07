@@ -4,16 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2B2B2B"
+    android:background="#1F282C"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/jogar"
+        android:id="@+id/buttonJogar"
         android:layout_width="175dp"
         android:layout_height="90dp"
         android:backgroundTint="#152788"
         android:fontFamily="@font/bangers"
-        android:insetTop="5dp"
+        android:insetTop="15dp"
         android:insetBottom="0dp"
         android:text="@string/jogar_dados"
         android:textAlignment="center"
@@ -26,24 +26,24 @@
         app:layout_constraintVertical_bias="0.751" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageDado1"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toTopOf="@+id/jogar"
-        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJogar"
+        app:layout_constraintEnd_toStartOf="@+id/imageDado2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dado1" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageDado2"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toTopOf="@+id/jogar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonJogar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toEndOf="@+id/imageDado1"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dado1" />
 
