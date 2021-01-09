@@ -4,11 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#1F282C"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/buttonJogar"
+        android:id="@+id/buttonLancar"
         android:layout_width="175dp"
         android:layout_height="90dp"
         android:backgroundTint="#152788"
@@ -29,22 +28,36 @@
         android:id="@+id/imageDado1"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonJogar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLancar"
         app:layout_constraintEnd_toStartOf="@+id/imageDado2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683"
         app:srcCompat="@drawable/dado1" />
 
     <ImageView
         android:id="@+id/imageDado2"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        app:layout_constraintBottom_toTopOf="@+id/buttonJogar"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLancar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/imageDado1"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.683"
         app:srcCompat="@drawable/dado1" />
+
+    <TextView
+        android:id="@+id/textoNome"
+        android:layout_width="324dp"
+        android:layout_height="44dp"
+        android:text=" Olá, "
+        android:textColor="#1F3CC5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageDado1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

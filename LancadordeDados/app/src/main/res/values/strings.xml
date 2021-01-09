@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">Lancador de Dados</string>
-    <string name="jogar_dados">JOGAR</string>
+    <string name="jogar_dados">Lançar</string>
     <string name="dado_1">Dado 1</string>
     <string name="dado_2">Dado 2</string>
     <string name="registra_nome_input"> Insira o seu nome</string>
-    <string name="botao_entrar">ENTRAR</string>
+    <string name="botao_entrar">Jogar</string>
 </resources>
